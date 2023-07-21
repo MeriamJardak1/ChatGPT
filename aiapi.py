@@ -19,7 +19,7 @@ def generateChatResponse(prompt) :
     
 
     try : 
-        answer = response['choices'][0]['message']['content']
+        answer = response['choices'][0]['message']['content'].replace('\n', '<br>')
     except :
         answer = 'Oops you beat the AI,try a different question,if the problem persists,come back later '
 
