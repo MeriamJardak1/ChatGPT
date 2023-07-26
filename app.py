@@ -19,7 +19,10 @@ def index():
     
     if request.method == 'POST' : 
        prompt = request.form['prompt']
-       answer = aiapi.generateChatResponse(prompt)
+       res ={}
+       res['answer']= aiapi.generateChatResponse(prompt)
+
+       return jsonify(res), 200 #sending back to the front
 
 
     return render_template('index.html', **locals())
@@ -27,3 +30,8 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='8888', debug=True)
+
+
+
+
+

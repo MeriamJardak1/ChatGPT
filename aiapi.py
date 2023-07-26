@@ -8,7 +8,7 @@ openai.api_key = api_key
 
 def generateChatResponse(prompt) : 
     messages =[]
-    messages.append( {"role": "system", "content": "You are a helpful assistant."})
+    messages.append( {"role": "system", "content": "Your name is MiniChat , You are a helpful assistant."})
     
     question={}
     question['role'] = 'user'
