@@ -5,7 +5,7 @@ class Config(object):
 
 class DevelopmentConfig(Config):
     SECRET_KEY = "this-is-a-super-secret-key"
-    OPENAI_KEY = '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'
+    OPENAI_KEY = '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'
 
 config = {
     'development': DevelopmentConfig,
